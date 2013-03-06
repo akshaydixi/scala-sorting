@@ -24,6 +24,7 @@ class SortingTest extends AssertionsForJUnit {
     @Test def testInsertionSort { testSort(InsertionSort.sort) }
     @Test def testShellSort     { testSort(ShellSort.sort) }
     @Test def testHeapSort      { testSort(HeapSort.sort) }
+    @Test def testMergeSort     { testSort(MergeSort.sort) }
 
     @Test def testHeap {
         var heap = new MaxHeap()

@@ -7,6 +7,10 @@ Only tested on small integer data sets. Your mileage may vary!
    + Stable
  + [Shell sort](http://en.wikipedia.org/wiki/Shell_sort)
    + Not Stable
+ + [Heapsort](http://en.wikipedia.org/wiki/Heapsort)
+   + Stable
+ + [Mergesort](http://en.wikipedia.org/wiki/Merge_sort)
+   + Stable
 
 ## Compiling and Testing
  + To compile: `sbt compile`
