@@ -22,17 +22,28 @@ class SortingTest extends AssertionsForJUnit {
     }
 
     @Test def testInsertionSort { testSort(InsertionSort.sort) }
-    @Test def testShellSort { testSort(ShellSort.sort) }
+    @Test def testShellSort     { testSort(ShellSort.sort) }
+    @Test def testHeapSort      { testSort(HeapSort.sort) }
 
-    def testSort(sortAlgorithm: (ArraySeq[Int]) => Unit) {
+    @Test def testHeap {
+        var heap = new MaxHeap()
+        heap.set(SortingTest.unsortedList)
+        val heapList = ArraySeq(0, 10, 9, 8, 7, 2, 5, 6, 3, 4, 1)
+        assertEquals(heapList, heap._vals)
+        assertEquals(10, heap.deleteMax)
+        assertEquals(9, heap.deleteMax)
+    }
+    
+
+    private def testSort(sortAlgorithm: (ArraySeq[Int]) => Unit) {
         sortAlgorithm(SortingTest.unsortedList)
         assertEquals(SortingTest.sortedList, SortingTest.unsortedList)
         assertEquals(ArraySeq(), SortingTest.emptyList)
     }
 
-    def printArraySeq(arraySeq: ArraySeq[Int]) {
+    private def printArraySeq(arraySeq: ArraySeq[Int]) {
         print("{")
-        print(SortingTest.unsortedList.mkString(", "))
+        print(arraySeq.mkString(", "))
         print("}\n")
     }
 }
