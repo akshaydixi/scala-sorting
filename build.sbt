@@ -1,4 +1,4 @@
-name := "Antimalware"
+name := "Scala-Sorting"
 
 version := "1.0"
 
