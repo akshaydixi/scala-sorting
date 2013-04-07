@@ -21,11 +21,11 @@ class SortingTest extends AssertionsForJUnit {
     SortingTest.emptyList = ArraySeq()
   }
 
-  @Test def testInsertionSort { testSort(InsertionSort.sort) }
   @Test def testHeapSort      { testSort(HeapSort.sort) }
+  @Test def testInsertionSort { testSort(InsertionSort.sort) }
   @Test def testMergeSort     { testSort(MergeSort.sort) }
-  @Test def testShellSort     { testSort(ShellSort.sort) }
   @Test def testQuicksort     { testSort(QuickSort.sort) }
+  @Test def testShellSort     { testSort(ShellSort.sort) }
 
   @Test def testHeap {
     var heap = new MaxHeap()
@@ -35,7 +35,6 @@ class SortingTest extends AssertionsForJUnit {
     assertEquals(10, heap.deleteMax)
     assertEquals(9, heap.deleteMax)
   }
-
 
   private def testSort(sortAlgorithm: (ArraySeq[Int]) => Unit) {
     sortAlgorithm(SortingTest.unsortedList)
