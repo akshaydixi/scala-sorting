@@ -7,8 +7,8 @@ The purposes of this repository is twofold:
 
 ## Algorithms
 The following algorithms are implemented.
-+ [Insertion sort](http://en.wikipedia.org/wiki/Insertion_sort)
 + [Heapsort](http://en.wikipedia.org/wiki/Heapsort)
++ [Insertion sort](http://en.wikipedia.org/wiki/Insertion_sort)
 + [Mergesort](http://en.wikipedia.org/wiki/Merge_sort)
 + [Quicksort](http://en.wikipedia.org/wiki/Quicksort)
 + [Shell sort](http://en.wikipedia.org/wiki/Shell_sort)
