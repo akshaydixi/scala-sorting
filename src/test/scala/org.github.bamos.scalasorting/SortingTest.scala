@@ -11,7 +11,7 @@ import scala.collection.mutable.ArraySeq
 object SortingTest {
   private var unsortedList: ArraySeq[Int] = _
   private var sortedList: ArraySeq[Int]   = _
-  private var emptyList: ArraySeq[Int]     = _
+  private var emptyList: ArraySeq[Int]    = _
 }
 
 class SortingTest extends AssertionsForJUnit {
