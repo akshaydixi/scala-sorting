@@ -1,9 +1,11 @@
 # Scala Sorting
 
+
 ## About
-The purposes of this repository is twofold:
+The purposes of this repository is twofold.
 + A small example of a `Scala` project with `JUnit`-esque tests using `sbt`.
 + Educational (naive) implementations of popular sorting algorithms.
++ See the [blog post](http://bamos.github.io/2013/04/07/scala-sorting/).
 
 ## Algorithms
 The following algorithms are implemented.
