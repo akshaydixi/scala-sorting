@@ -1,6 +1,7 @@
 # Scala Sorting
 
-Note: I wrote this project as an undergrad to help learn Scala and
+Note and warning:
+I wrote this project as an undergrad to help learn Scala and
 the material in a sophomore-level data structures class.
 
 This repository contains educational implementations of popular
